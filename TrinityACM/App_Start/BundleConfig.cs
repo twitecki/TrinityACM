@@ -15,9 +15,13 @@ namespace TrinityACM
             bundles.Add(new ScriptBundle("~/bundles/bootstrapjs").Include(
                         "~/Scripts/bootstrap.min.js"));
 
+            //bundles.Add(new StyleBundle("~/Content/bootstrapcss").Include(
+            //            "~/Content/bootstrap.min.css",
+            //            "~/Content/bootstrap-responsive.min.css"));
+
             bundles.Add(new StyleBundle("~/Content/bootstrapcss").Include(
-                        "~/Content/bootstrap.min.css",
-                        "~/Content/bootstrap-responsive.min.css"));
+                        "~/Content/bootstrap.min.css"));
+
         }
     }
 }
