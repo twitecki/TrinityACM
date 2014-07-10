@@ -10,7 +10,7 @@
     <div class="navbar-wrapper">
         <div class="container">
 
-            <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="navbar navbar-default navbar-static-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -19,13 +19,18 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="#">Project name</a>
+                        <!--<a class="navbar-brand" href="#">Trinity University</a>-->
+                        <a class="navbar-brand" href="http://web.mit.edu/"><img src="images/trinseal.jpg" alt="mit-logo" width="30" height="30" /></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
                             <li class="active"><a href="#">Home</a></li>
+                            <li>@Html.ActionLink("Home", "Index")</li>
                             <li>@Html.ActionLink("About Us", "About")</li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#contact">Scala Resources</a></li>
+                            <li><a href="#contact">Our CS Department</a></li>
+                            <li><a href="#contact">Calendar</a></li>
+                            <li><a href="#contact">Programs and Events</a></li>
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                                 <ul class="dropdown-menu">
@@ -42,12 +47,17 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 
-
     @RenderBody()
+
+    <!-- /END THE FEATURETTES -->
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2014 Trinity University. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
