@@ -1,7 +1,136 @@
 ﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+@{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
-<h2>Configuring GIT </h2>
-<h3>Testing Git Change</h3>
+<body>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <!--<img data-src="holder.js/200x200/auto/images/Unknown.png/" alt="Hello slide">-->
+                <img src="images/trinity.jpg" alt "Hicks" class - "img responsive">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Welcome!</h1>
+                        <p>The Trinity University Department.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img data-src="holder.js/900x500/auto/#666:#6a6a6a/text:Second slide" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img data-src="holder.js/900x500/auto/#555:#5a5a5a/text:Third slide" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+
+
+        <!-- START THE FEATURETTES -->
+
+
+
+        <div class="col-lg-7">
+            <h1 id="welcome">Home</h1>
+
+            <p>
+                <b>Trinity ACM</b> represents the student branch for the Association for Computing Machinery. Trinity ACM plans different events and activities for the Computer Science Department on campus. These activities include research panels and discussions, Nerd Violence Night, and hackathons. We're made up of a set of officers on the Executive Board as well as a general membership. Membership is as easy as sending a bit of information about yourself to us. For details, check out the membership page.
+
+                Our club also manages a couple of community-building programs - URGE brings students together for discussion of technical papers in casual reading groups, the Six Cents program sponsors research and travel for deserving individuals, 6.Insight is a jointly-held seminar series, and 6.570 is a new mobile apps development competition. For more details on each of these programs, go to our Programs page.
+        </div>
+
+
+
+
+        <div class="col-lg-5">
+            <h1 id="congrats">2014 Board Members</h1>
+
+            <p>
+                <b>President:</b>: Diego Castro</br>
+                <b>Vice President:</b> Diego Castro </br>
+                <b>Treasurer:</b>:Diego Castro</br>
+                <b>Communications Director:</b>: Diego Castro</br>
+                <b>Webmaster:</b> Diego Castro </br>
+                <b>Corporate Affairs Chair:</b>:Diego Castro</br>
+                <b>Corporate Affairs Committee Members:</b>: Diego Castro</br>
+                <b>Secretary:</b> Diego Castro </br>
+                <b>Freshman Liasion:</b>:Diego Castro</br>
+                <b>Community Outreadh Director:</b>: Diego Castro</br>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Nerd Violence Night. <span class="text-muted">It'll blow your mind.</span></h2>
+                <p class="lead">We do games and stuff!</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-5">
+                <!--<img class="featurette-image img-responsive" data-src="images/mccumber.png/200x200/auto" alt="Generic placeholder image">-->
+                <a class="tech-tigers" href="#"><img src="images/mccumber.png" alt="mit-logo" width="375" height="270" /></a>
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Trinity Tech Tigers. <span class="text-muted">Come check us out. </span></h2>
+                <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Interested in joining? <span class="text-muted">We thought so.</span></h2>
+                <p class="lead">Joining is so easy! It's also free! Come to any of our events. Come to our meetings. Eat our food. Drink our drinks. We have so much stuff to do!</p>
+            </div>
+            <div class="col-md-5">
+                <a class="tech-tigers" href="#"><img src="images/thicks.png" alt="mit-logo" width="375" height="375" /></a>
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+
+    </div><!-- /.container -->
+</body>
