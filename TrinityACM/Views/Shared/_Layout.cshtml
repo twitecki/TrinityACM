@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     @Styles.Render("~/Content/bootstrapcss")
+    @Styles.Render("~/Content/customcss")
 </head>
+
 <body>
+
     <div class="navbar-wrapper">
         <div class="container">
 
@@ -20,19 +23,24 @@
                             <span class="icon-bar"></span>
                         </button>
                         <!--<a class="navbar-brand" href="#">Trinity University</a>-->
-                        <a class="navbar-brand" href="http://web.mit.edu/"><img src="images/trinseal.jpg" alt="mit-logo" width="30" height="30" /></a>
+                        <a class="navbar-brand" href="#"><img src="Content/Images/trinseal.jpg" width="30" height="30" /></a>
                     </div>
                     <div class="navbar-collapse collapse">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="#">Home</a></li>
-                            <li>@Html.ActionLink("Home", "Index")</li>
-                            <li>@Html.ActionLink("About Us", "About")</li>
-                            <li><a href="#contact">Scala Resources</a></li>
-                            <li><a href="#contact">Our CS Department</a></li>
-                            <li><a href="#contact">Calendar</a></li>
-                            <li><a href="#contact">Programs and Events</a></li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                            @{string actName = ViewContext.RouteData.Values["action"].ToString();}
+                            <li  @if(actName == "Index"){<text> class="active"</text>}>@Html.ActionLink("Home", "Index")</li>
+                            <li  @if(actName == "About"){<text> class="active"</text>}>@Html.ActionLink("About Us", "About")</li>
+                            <li  @if(actName == "ScalaResources"){<text> class="active"</text>}>@Html.ActionLink("Scala Resources", "ScalaResources")</li>
+                            <li  @if(actName == "OurDepartment"){<text> class="active"</text>}>@Html.ActionLink("Our Department", "OurDepartment")</li>
+                            <li  @if(actName == "Calendar"){<text> class="active"</text>}>@Html.ActionLink("Calendar", "Calendar")</li>
+                            <li  @if(actName == "ProgramsAndEvents"){<text> class="active"</text>}>@Html.ActionLink("Programs and Events", "ProgramsAndEvents")</li>
+@*                            <li>@Html.ActionLink("About Us", "About")</li>
+                            <li>@Html.ActionLink("Scala Resources", "ScalaResources")</li>
+                            <li>@Html.ActionLink("Our CS Department", "OurDepartment")</li>
+                            <li>@Html.ActionLink("Calendar", "Calendar")</li>
+                            <li>@Html.ActionLink("Programs and Events", "ProgramsAndEvents")</li>*@
+@*                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Something Important<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li><a href="#">Action</a></li>
                                     <li><a href="#">Another action</a></li>
@@ -42,7 +50,7 @@
                                     <li><a href="#">Separated link</a></li>
                                     <li><a href="#">One more separated link</a></li>
                                 </ul>
-                            </li>
+                            </li>*@
                         </ul>
                     </div>
                 </div>

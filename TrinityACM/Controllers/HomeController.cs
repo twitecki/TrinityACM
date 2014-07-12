@@ -10,7 +10,7 @@ namespace Sample.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
+            ViewBag.Message = "Home";
 
             return View();
         }
@@ -22,9 +22,30 @@ namespace Sample.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Calendar()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Calendar";
+
+            return View();
+        }
+        
+        public ActionResult ScalaResources()
+        {
+            ViewBag.Message = "Scala Resources";
+
+            return View();
+        }
+
+        public ActionResult OurDepartment()
+        {
+            ViewBag.Message = "Our Department";
+
+            return View();
+        }
+
+        public ActionResult ProgramsAndEvents()
+        {
+            ViewBag.Message = "Programs and Events";
 
             return View();
         }

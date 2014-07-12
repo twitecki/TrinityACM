@@ -22,6 +22,9 @@ namespace TrinityACM
             bundles.Add(new StyleBundle("~/Content/bootstrapcss").Include(
                         "~/Content/bootstrap.min.css"));
 
+            bundles.Add(new StyleBundle("~/Content/customcss").Include(
+                        "~/Content/custom.css"));
+
         }
     }
 }
